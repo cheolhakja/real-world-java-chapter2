@@ -16,5 +16,14 @@ public class BankTransactionProcessor {
         return result;
     }
 
+    public List<BankTransaction> findTransactionBy(BankTransactionFilter bankTransactionFilter, final List<BankTransaction> list) {
+        final List<BankTransaction> result = new ArrayList<>();
+        for (BankTransaction bankTransaction : list) {
+            if(bankTransactionFilter.test(bankTransaction)) {
+                result.add(bankTransaction);
+            }
+        }
 
+        return result;
+    }
 }
