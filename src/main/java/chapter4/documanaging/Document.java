@@ -6,7 +6,7 @@ public class Document {
 
     private final Map<String, String> attributes; //불변객체로 만든다
 
-    public Document(Map<String, String> attributes) {
+    Document(Map<String, String> attributes) {
         this.attributes = attributes;
     }
 

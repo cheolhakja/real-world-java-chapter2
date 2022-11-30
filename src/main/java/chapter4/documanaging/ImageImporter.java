@@ -1,6 +1,4 @@
-package chapter4.documanaging.importfile;
-
-import chapter4.documanaging.Document;
+package chapter4.documanaging;
 
 import java.util.HashMap;
 
