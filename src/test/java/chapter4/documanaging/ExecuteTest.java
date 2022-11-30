@@ -5,11 +5,4 @@ import org.junit.jupiter.api.Test;
 
 public class ExecuteTest {
 
-    @Test
-    public void searchByPersonNameTest() {
-        Document document = new Document();
-        String answer = "Walker";
-        String name = document.searchByPersonName();
-        Assertions.assertThat(name).isEqualTo(answer);
-    }
 }
